@@ -24,6 +24,12 @@ For a more generic research server, run:
 python general_mcp.py
 ```
 
+### Funder research example
+
+```shell
+python funder_mcp.py
+```
+
 The server will start on `http://127.0.0.1:8000` using SSE transport.
 
 ## Files
@@ -32,3 +38,4 @@ The server will start on `http://127.0.0.1:8000` using SSE transport.
 - `general_mcp.py`: Generic research server built on `research_base`
 - `research_base.py`: Provides configuration and pluggable search strategies
 - `records.json`: Example data file (must be present in the same directory)
+- `funder_mcp.py`: Example using traversal packets for funder configs
