@@ -12,15 +12,23 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the server:
+Run the cupcake demo server:
 
 ```shell
 python sample_mcp.py
+```
+
+For a more generic research server, run:
+
+```shell
+python general_mcp.py
 ```
 
 The server will start on `http://127.0.0.1:8000` using SSE transport.
 
 ## Files
 
-- `sample_mcp.py`: Main server code
-- `records.json`: Cupcake order data (must be present in the same directory)
+- `sample_mcp.py`: Cupcake-specific example server
+- `general_mcp.py`: Generic research server built on `research_base`
+- `research_base.py`: Provides configuration and pluggable search strategies
+- `records.json`: Example data file (must be present in the same directory)
