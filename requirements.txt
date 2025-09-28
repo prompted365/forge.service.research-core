@@ -1,4 +1,5 @@
 # Deprecated direct dependency pins.
 # Please use the compiled lock files instead.
 -r requirements.lock
-
+pytest
+reflex
