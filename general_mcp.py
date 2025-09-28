@@ -4,6 +4,7 @@ from fastmcp.server import FastMCP
 
 from logging_utils import get_logger
 from research_base import ResearchBase, ResearchConfig
+from server_utils import register_metadata_routes
 
 logger = get_logger(__name__)
 
@@ -59,6 +60,8 @@ def create_server(config: ResearchConfig | None = None) -> FastMCP:
             extra={"id": resolved_id},
         )
         return record
+
+    register_metadata_routes(mcp)
 
     return mcp
 
