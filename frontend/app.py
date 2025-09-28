@@ -7,6 +7,15 @@ from typing import Any, Dict, List
 
 import reflex as rx
 
+if not hasattr(rx, "wrap"):
+    def _wrap(*children: rx.Component, **props: str) -> rx.Component:
+        """Fallback implementation for reflex.wrap on older Reflex builds."""
+
+        props.setdefault("flex_wrap", "wrap")
+        return rx.flex(*children, **props)
+
+    rx.wrap = _wrap  # type: ignore[attr-defined]
+
 from frontend.services import mcp
 from frontend.services.mcp import MCPClientError
 
