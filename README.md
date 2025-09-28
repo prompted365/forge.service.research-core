@@ -64,6 +64,23 @@ matching records.
 pytest
 ```
 
+## Reflex front-end
+
+A Reflex dashboard lives under `frontend/` for exploring the MCP services with a
+visual UI. It surfaces handshake metadata, record search/fetch flows, and the
+funder evaluation workflow.
+
+```shell
+pip install -e .[frontend]
+cd frontend
+reflex run
+```
+
+Start one of the MCP servers (for example `python general_mcp.py`) and then run
+`reflex run` to launch the dashboard. The interface defaults to the general MCP
+endpoint on `http://127.0.0.1:8000` and includes quick toggles for the sample
+cupcake and funder servers.
+
 ## Repository structure
 
 - `research_base.py` – shared configuration, validation, and search helpers.

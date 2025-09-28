@@ -24,6 +24,10 @@ dev = [
     "pytest>=7.4",
     "pytest-asyncio>=0.23",
 ]
+frontend = [
+    "httpx>=0.27,<0.28",
+    "reflex>=0.5.10",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/openai/forge.service.research-core"

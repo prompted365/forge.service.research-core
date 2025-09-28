@@ -1,0 +1,7 @@
+{
+  "app": "frontend.app:app",
+  "frontend_path": "frontend/.web",
+  "backend_path": "frontend/.backend",
+  "deploy_url": "",
+  "db_url": "sqlite:///frontend/.web/reflex.db"
+}
