@@ -2,3 +2,6 @@
 # Please use the compiled lock files instead.
 -r requirements.lock
 
+# Supplemental tooling required for the current run.
+pytest
+reflex
